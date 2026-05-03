@@ -1,0 +1,91 @@
+body{
+    font-family: monospace;
+    background-color: beige;
+    text-align: center;
+}
+
+.h1{
+    text-decoration: underline;
+}
+
+
+.recipe-box{
+    padding: 20px 20px 20px 20px ;
+    border: 2px solid black;
+    margin: 5px;
+    /* width: 250px;*/
+    height: 250px; 
+}
+
+.recipes{
+display: grid;
+gap: 1em;
+grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    flex: 1 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+.search{
+    position: relative;
+    margin: 0;
+    padding: 0;
+display: flex;
+justify-content: center;
+  align-items: center;
+ width: 250px;
+ height: 50px;
+    border-radius: 50px;
+    border: 1px solid black;
+    transition: width 1.5s;
+}
+
+.search-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+}
+.search-bar{
+    padding: 10px;
+    outline: none;
+    border: none;
+    text-align: center;
+    background: transparent;
+    width: 100%;
+}
+
+
+.fa-magnifying-glass{
+position:absolute;
+top: 15px;
+right: 15px;
+width: fit-content;
+cursor: pointer;
+text-align: center;
+}
+
+.recipe-1{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-image: linear-gradient(hsl(0, 0%, 17.65%, 0.3)) fill 1;
+}
+.recipe-1 p{
+    position: absolute;
+    z-index: 1;
+    padding: 10px;
+    font-weight: bold;
+    color: beige;
+  bottom: 0;
+
+}
+.recipe1img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
