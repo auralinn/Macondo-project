@@ -4,7 +4,40 @@ body{
 }
 
 .recipe{
-    border: 1x solid black; 
-    padding: 10px; 
+    border: 1px solid black;
+    padding: 10px;
     margin: 10px;
+    text-align: c;
+    border-radius: 15px;
+}
+
+
+header{
+    margin: 30px;
+}
+
+.home-page-link{
+    text-decoration: none;
+    color: white;
+    border: 1px solid black;
+    padding: 25px;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    background-color: black;
+}
+
+.left-arrow{
+color: black;
+}
+
+nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.5em;
+}
+
+.left-arrow:hover{
+    cursor: pointer;
 }
