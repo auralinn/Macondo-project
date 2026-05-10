@@ -23,7 +23,7 @@ height: 100%;
     background: beige;
     padding: 8px;
     border-radius: 10px;
-    border: solid black;
+    border: none;
     color: black;
 }
 .desc-tags .easy{
