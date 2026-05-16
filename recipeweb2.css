@@ -121,6 +121,32 @@ text-align: center;
   bottom: 0;
 
 }
+
+.recipe-3{
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-image: linear-gradient(hsl(0, 0%, 17.65%, 0.3)) fill 1;
+}
+
+.recipe-3 p{
+    position: absolute;
+    z-index: 1;
+    padding: 10px;
+    font-weight: bold;
+    color: beige;
+  bottom: 0;
+
+}
+
+.recipe-3 h2{
+    text-align: center;
+    margin:35px;
+}
+
 .recipeimg{
     position: absolute;
     top: 0;

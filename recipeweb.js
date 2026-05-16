@@ -18,3 +18,4 @@
 
 // const searchButton = document.querySelector('.maginify-glass')
 // searchButton.addEventListener("click", searchMeal);
+
