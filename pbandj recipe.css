@@ -65,6 +65,17 @@ nav{
     background-color: black;
     color: beige;
 }
+
+#checkboxID:checked + label{
+    text-decoration: line-through;
+}
+#checkboxID{
+    accent-color: beige;
+}
+.checkboxLabel{
+    pointer-events: none;
+}
+
 @media (max-width:600px) {
   .timer-frame{
 width: 100%;
