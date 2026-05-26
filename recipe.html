@@ -1,66 +1,142 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Recipes4u</title>
 
-    <link rel="stylesheet" href="recipeweb2.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
-<body>
- <header>
-        <nav>
-            <a href="index.html" class="back-link"><i class="fa-solid fa-arrow-left left-arrow" style="color: rgb(0, 0, 0);"></i></a>
-            <a href="index.html" class="home-page-link">R4u</a>
-        </nav>
+    <link rel="stylesheet" href="recipeweb2.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="index.html" class="back-link"
+          ><i
+            class="fa-solid fa-arrow-left left-arrow"
+            style="color: rgb(0, 0, 0)"
+          ></i
+        ></a>
+        <a href="index.html" class="home-page-link">R4u</a>
+      </nav>
     </header>
-    
-    <h1>So you actually wanted to start. Well, you've come to the right place. Why don't you start with an easy recipe? Like the classic PB&J. I don't even think we need a recipe for that one</h1>
-<h1 class="h1">Recipes</h1>
-<div class="search-section">
-<form action="" class="search">
-    <input type="text" class="search-bar" placeholder="search" > 
-    <i class="fa-solid fa-magnifying-glass maginify-glass" style="color: rgb(0, 0, 0);"></i>
-</form>
-</div>
-<main>
-    <section class="recipes">
 
-        <a href="pb&j recipe.html" class="recipe-1-link" style="text-decoration: none;">
-        <div class="recipe-box recipe-1"><div class="desc-tags"><button style="height: fit-content;">Breakfast</button><br><button style="height: fit-content;" class="easy">Easy</button></div>
-            <h2 style="color: beige;">PB&J</h2>
+    <h1>
+      So you actually wanted to start. Well, you've come to the right place. Why
+      don't you start with an easy recipe? Like the classic PB&J. I don't even
+      think we need a recipe for that one
+    </h1>
+    <h1 class="h1">Recipes</h1>
+    <div class="search-section">
+      <div action="" class="search">
+        <input type="text" class="search-bar" placeholder="search" />
+        <i
+          class="fa-solid fa-magnifying-glass maginify-glass"
+          style="color: rgb(0, 0, 0)"
+        ></i>
+      </div>
+      <div class="filter-section"></div>
+      <h2>Filter:</h2>
+      <select class="filter">
+        <option value="allrecipes">All recipes</option>
+        <option value="breakfast">Breakfast</option>
+        <option value="lunch">Lunch</option>
+        <option value="dinner">Dinner</option>
+      </select>
+    </div>
+    <main>
+      <section class="recipes">
+        <a
+          href="pb&j recipe.html"
+          class="recipe-link breakfast-recipe"
+          style="text-decoration: none"
+        >
+          <div class="recipe-box recipe-1">
+            <div class="desc-tags">
+              <button style="height: fit-content">Breakfast</button
+              ><br /><button style="height: fit-content" class="easy">
+                Easy
+              </button>
+            </div>
+            <h2 style="color: beige">PB&J</h2>
             <p>The classic sandwich</p>
-           
-            <img src="PB&J.jpg" alt="" class="recipeimg">
-        </div></a>
 
-        <a href="french-toast.html" class="recipe-2-link" style="text-decoration: none;">
+            <img src="PB&J.jpg" alt="" class="recipeimg" /></div
+        ></a>
+
+        <a
+          href="french-toast.html"
+          class="recipe-link breakfast-recipe"
+          style="text-decoration: none"
+        >
           <div class="recipe-box recipe-2">
-           <div class="desc-tags"><button style="height: fit-content;">Breakfast</button><br><button style="height: fit-content;" class="easy">Easy</button></div>
-            <h2 style="color: beige;">French toast</h2>
+            <div class="desc-tags">
+              <button style="height: fit-content">Breakfast</button
+              ><br /><button style="height: fit-content" class="easy">
+                Easy
+              </button>
+            </div>
+            <h2 style="color: beige">French toast</h2>
             <p>It's delicious!</p>
-            <img src="french-toast1.jpg" alt="" class="recipeimg">
-        </div></a>
+            <img src="french-toast1.jpg" alt="" class="recipeimg" /></div
+        ></a>
 
-        <a href="Jollof-rice.html" style="text-decoration: none;">
+        <a
+          href="Jollof-rice.html"
+          style="text-decoration: none"
+          class="recipe-link dinner-recipe"
+        >
           <div class="recipe-box recipe-3">
-              <div class="desc-tags"><button style="height: fit-content;">Dinner</button><br><button style="height: fit-content;" class="easy">Easy</button></div>
-            <h2 style="color: beige;">Jollof rice</h2>
+            <div class="desc-tags">
+              <button style="height: fit-content">Dinner</button><br /><button
+                style="height: fit-content"
+                class="hard"
+              >
+                Hard
+              </button>
+            </div>
+            <h2 style="color: beige">Jollof rice</h2>
             <p>I'm Nigerian. Of course, I gotta add this.</p>
-            <img src="jollof-rice.jpg" alt="" class="recipeimg">
-        </div></a>
+            <img src="jollof-rice.jpg" alt="" class="recipeimg" /></div
+        ></a>
 
+        <a
+          href="belgian fries.html"
+          class="recipe-link lunch-recipe dinner-recipe"
+        >
           <div class="recipe-box recipe-4">
-            <p>Some text</p>
-        </div>
+            <div class="desc-tags">
+              <button style="height: fit-content">Lunch/Dinner</button
+              ><br /><button style="height: fit-content" class="medium">
+                Medium
+              </button>
+            </div>
+            <h2 style="color: beige">Belgian fries</h2>
+            <p>
+              Ok, Is it French or Belgian? choose already. Aside from that, I
+              gotta try this
+            </p>
+            <img src="belgian fries.jpg" alt="" class="recipeimg" /></div
+        ></a>
 
+        <a href="belgian fries.html" class="recipe-link">
           <div class="recipe-box recipe-5">
             <p>Some text</p>
-        </div>
-    </section>
-</main>
-<script src="recipeweb.js"></script>
-</body>
+            <h2>Some text</h2>
+          </div></a
+        >
 
+        <div class="notFound">
+          <h2>We don't have that recipe at the moment.</h2>
+        </div>
+      </section>
+    </main>
+    <script src="recipe.js"></script>
+  </body>
 </html>

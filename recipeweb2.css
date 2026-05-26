@@ -1,188 +1,228 @@
-body{
-    font-family: monospace;
-    background-color: beige;
-    text-align: center;
+body {
+  font-family: monospace;
+  background-color: beige;
+  text-align: center;
 }
 
-.h1{
-    text-decoration: underline;
+.h1 {
+  text-decoration: underline;
 }
-.desc-tags{
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-direction: row;
-    gap: 1em;
-justify-content:flex-start;
-align-items:flex-start;
-width: 100%;
-height: 100%;
-}
-
-.desc-tags button{
-    background: beige;
-    padding: 8px;
-    border-radius: 10px;
-    border: none;
-    color: black;
-}
-.desc-tags .easy{
-    color: green;
-}
-.recipe-box{
-    padding: 20px 20px 20px 20px ;
-    border: 2px solid black;
-    margin: 5px;
-    /* width: 250px;*/
-    height: 250px; 
+.desc-tags {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+  height: 100%;
 }
 
-.recipes{
-display: grid;
-gap: 1em;
-grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    flex: 1 0 auto;
-    justify-content: center;
-    align-items: center;
+.desc-tags button {
+  background: beige;
+  padding: 8px;
+  border-radius: 10px;
+  border: none;
+  color: black;
 }
-.search{
-    position: relative;
-    margin: 0;
-    padding: 0;
-display: flex;
-justify-content: center;
+.desc-tags .easy {
+  color: green;
+}
+
+.desc-tags .medium {
+  color: #daa520;
+}
+.desc-tags .hard {
+  color: red;
+}
+.recipe-box {
+  padding: 20px 20px 20px 20px;
+  border: 2px solid black;
+  margin: 5px;
+  /* width: 250px;*/
+  height: 250px;
+}
+
+.recipes {
+  display: grid;
+  gap: 1em;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 0.5fr));
+  flex: 1 0 auto;
+  justify-content: center;
   align-items: center;
- width: 250px;
- height: 50px;
-    border-radius: 50px;
-    border: 1px solid black;
-    transition: width 1.5s;
+}
+.search {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  height: 50px;
+  border-radius: 50px;
+  border: 1px solid black;
+  transition: width 1.5s;
 }
 
-.search-section{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 5px;
+.search-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
 }
-.search-bar{
-    padding: 10px;
-    outline: none;
-    border: none;
-    text-align: center;
-    background: transparent;
-    width: 100%;
-}
-
-
-.fa-magnifying-glass{
-position:absolute;
-top: 15px;
-right: 15px;
-width: fit-content;
-cursor: pointer;
-text-align: center;
+.search-bar {
+  padding: 10px;
+  outline: none;
+  border: none;
+  text-align: center;
+  background: transparent;
+  width: 100%;
 }
 
-.recipe-1{
-    position: relative;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-image: linear-gradient(hsl(0, 0%, 17.65%, 0.3)) fill 1;
+.fa-magnifying-glass {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: fit-content;
+  cursor: pointer;
+  text-align: center;
 }
-.recipe-1 p{
-    position: absolute;
-    z-index: 1;
-    padding: 10px;
-    font-weight: bold;
-    color: beige;
+
+.recipe-1 {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-image: linear-gradient(hsl(0, 0%, 17.65%, 0.3)) fill 1;
+}
+.recipe-1 p {
+  position: absolute;
+  z-index: 1;
+  padding: 10px;
+  font-weight: bold;
+  color: beige;
   bottom: 0;
-
 }
 
-.recipe-2{
-    position: relative;
+.recipe-2 {
+  position: relative;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-image: linear-gradient(hsl(0, 0%, 17.65%, 0.3)) fill 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-image: linear-gradient(hsl(0, 0%, 17.65%, 0.3)) fill 1;
 }
-.recipe-2 p{
-    position: absolute;
-    z-index: 1;
-    padding: 10px;
-    font-weight: bold;
-    color: beige;
+.recipe-2 p {
+  position: absolute;
+  z-index: 1;
+  padding: 10px;
+  font-weight: bold;
+  color: beige;
   bottom: 0;
-
 }
 
-.recipe-3{
-    position: relative;
+.recipe-3 {
+  position: relative;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-image: linear-gradient(hsl(0, 0%, 17.65%, 0.3)) fill 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-image: linear-gradient(hsl(0, 0%, 17.65%, 0.3)) fill 1;
 }
 
-.recipe-3 p{
-    position: absolute;
-    z-index: 1;
-    padding: 10px;
-    font-weight: bold;
-    color: beige;
+.recipe-3 p {
+  position: absolute;
+  z-index: 1;
+  padding: 10px;
+  font-weight: bold;
+  color: beige;
   bottom: 0;
-
 }
 
-.recipe-3 h2{
-    text-align: center;
-    margin:35px;
+.recipe-3 h2 {
+  text-align: center;
+  margin: 35px;
+}
+.recipe-4 {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-image: linear-gradient(hsl(0, 0%, 17.65%, 0.3)) fill 1;
 }
 
-.recipeimg{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
+.recipe-4 p {
+  position: absolute;
+  z-index: 1;
+  padding: 10px;
+  font-weight: bold;
+  color: beige;
+  bottom: 0;
+}
+.recipe-4 h2 {
+  text-align: center;
+  margin: 48px;
+  width: fit-content;
+  padding: 5px;
+}
+.recipeimg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
 }
 
-header{
-    margin: 30px;
+header {
+  margin: 30px;
 }
 
-.home-page-link{
-    text-decoration: none;
-    color: white;
-    border: 1px solid black;
-    padding: 25px;
-    border-radius: 50%;
-    width: 25px;
-    height: 25px;
-    background-color: black;
+.home-page-link {
+  text-decoration: none;
+  color: white;
+  border: 1px solid black;
+  padding: 25px;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  background-color: black;
 }
 
-.left-arrow{
-    height: 100%;
+.left-arrow {
+  height: 100%;
 }
 
-nav{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 1em;
-    text-align: left;
+nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1em;
+  text-align: left;
 }
 
-.left-arrow:hover{
-    cursor: pointer;
+.left-arrow:hover {
+  cursor: pointer;
+}
+
+.recipe-link {
+  text-decoration: none;
+}
+
+.notFound {
+  display: none;
+}
+
+.filter {
+  margin: 25px;
+  padding: 10px;
+  appearance: base-select;
 }

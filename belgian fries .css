@@ -1,0 +1,147 @@
+body {
+  background-color: beige;
+  font-family: monospace;
+  overflow-x: hidden;
+}
+
+.recipe {
+  border: 1px solid black;
+  padding: 10px;
+  margin: 10px;
+  text-align: c;
+  border-radius: 15px;
+}
+
+header {
+  margin: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex: 1 0 auto;
+}
+.help-buttons {
+  margin: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  width: 100%;
+  align-items: right;
+
+  gap: 10px;
+}
+.home-page-link {
+  text-decoration: none;
+  color: white;
+  border: 1px solid black;
+  padding: 25px;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  background-color: black;
+}
+
+.left-arrow {
+  color: black;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.5em;
+}
+
+.left-arrow:hover {
+  cursor: pointer;
+}
+
+.timer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.needTimer {
+  text-decoration: none;
+  color: black;
+  border: 1px solid black;
+  height: fit-content;
+  padding: 10px;
+  border-radius: 10px;
+  width: fit-content;
+}
+
+.needTimer:hover {
+  background-color: black;
+  color: beige;
+}
+
+.checkboxLabel {
+  pointer-events: none;
+}
+
+.ingredients {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 3em;
+}
+.items {
+  display: flex;
+  justify-content: center;
+  height: fit-content;
+  width: fit-content;
+}
+.items p {
+  height: fit-content;
+  width: fit-content;
+}
+.list {
+  width: fit-content;
+  height: fit-content;
+}
+.checkbox {
+  accent-color: beige;
+}
+.checkbox:checked + label {
+  text-decoration: line-through;
+}
+
+/*section for spotify loader */
+#load-btn {
+  background: none;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid black;
+}
+
+#load-btn:hover {
+  cursor: pointer;
+  background: black;
+  color: beige;
+}
+
+#spotify-input {
+  padding: 10px;
+  border-radius: 5px;
+  background: none;
+}
+/* end of section for spotify loader */
+
+@media (max-width: 600px) {
+  .timer-frame {
+    width: 100%;
+    height: 600px;
+  }
+
+  .help-buttons {
+    margin-left: 100px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .help-buttons a {
+    width: fit-content;
+  }
+}
