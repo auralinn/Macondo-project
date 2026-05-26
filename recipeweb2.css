@@ -222,7 +222,19 @@ nav {
 }
 
 .filter {
-  margin: 25px;
   padding: 10px;
   appearance: base-select;
+}
+.filter:hover {
+  cursor: pointer;
+}
+.filter-section {
+  margin: 25px;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+::picker(select):hover {
+  cursor: pointer;
 }

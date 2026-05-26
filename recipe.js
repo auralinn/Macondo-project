@@ -64,4 +64,10 @@ option.addEventListener("change", (e) => {
       breakfast.style.display = "none";
     }
   });
+
+  box.forEach((recipeLink) => {
+    if (foodOption === "allrecipes") {
+      recipeLink.style.display = "block";
+    }
+  });
 });
